@@ -131,8 +131,6 @@ const updateCities = (list) => {
 }
 
 window.addEventListener('load', () => {
-  console.log('its working')
-
   getCities().then(data => updateCities(data))
 })
 
