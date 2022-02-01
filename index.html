@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather-app</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+
+      <section class="weather">
+        <h1 class="title">Погода</h1>
+
+        <div class="upper-line">
+          <button class="btn-update" title="Обновить информацию"></button>
+          <h2 class="city-name" title="Выбрать другой город"></h2>
+          <div class="temp"></div>
+          <div class="weather-icon-wrapper">
+            <img src="" alt="icon" class="weather-icon">
+          </div>
+        </div>
+
+        <div class="temperature info-block">
+          <span class="main-temp note">Температура в настоящий момент: <span class="main-temp-v value"></span></span>
+          <span class="temp-fl note">Температура ощущается как: <span class="temp-fl-v value"></span></span>
+          <span class="temp-max note">Максимальная температура в регионе: <span class="temp-max-v value"></span></span>
+          <span class="temp-min note">Минимальная температура в регионе: <span class="temp-min-v value"></span></span>
+        </div>
+
+        <div class="fallout info-block">
+            <span class="rain-1h note hide">Осадки дождя за последний час: <span class="rain-1h-v value"></span></span>
+            <span class="rain-3h note hide">Осадки дождя за последние 3 часа: <span class="rain-3h-v value"></span></span>
+            <span class="snow-1h note hide">Осадки снега за последний час: <span class="snow-1h-v value"></span></span>
+            <span class="snow-3h note hide">Осадки снега за последние 3 часа: <span class="snow-3h-v value"></span></span>
+        </div>
+
+        <div class="wind info-block">
+          <span class="wind-speed note">Скорость ветра: <span class="wind-speed-v value"></span></span>
+          <span class="wind-direction note">Направление ветра: <span class="wind-direction-v value"></span></span>
+        </div>
+
+        <div class="clouds-pressure info-block">
+          <span class="clouds note">Облачность: <span class="clouds-v value"></span></span>
+          <span class="pressure note">Давление ртутного столба: <span class="pressure-v value"></span></span>
+        </div>
+
+        <div class="sun-time info-block">
+          <span class="sunrise note">Время восхода: <span class="sunrise-v value"></span></span>
+          <span class="sunset note">Время заката: <span class="sunset-v value"></span></span>
+        </div>
+      </section>
+
+      <section class="cities">
+        <h1 class="title">Выберите город</h1>
+
+        <div class="search">
+          <input type="text" class="search-input" placeholder="Введите название города...">
+        </div>
+
+        <ul class="cities-list"></ul>
+      </section>
+
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

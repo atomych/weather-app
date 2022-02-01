@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  margin: 2rem 0 1.5rem 0;
+
+  &-input {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    padding: .3rem;
+
+    transition: all .4s linear;
+
+    &::placeholder {
+      font-family: 'Poppins', sans-serif;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 300;
+
+      transition: all .4s linear;
+    }
+
+    &:focus {
+      border-bottom-color: #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.cities-list {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+}
+
+.city-item {
+  padding: .3rem .5rem;
+
+  font-size: 1.3rem;
+  font-weight: 300;
+
+  opacity: .6;
+  transition: all .2s linear;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    text-shadow: 0 0 .3rem #fff;
+  }
+}
